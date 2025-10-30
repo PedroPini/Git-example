@@ -2,8 +2,7 @@ import re
 
 'regular regression sequence of characters that form search patterns'
 """
-
-[arn] Return a match where one of the specified characters (a, r or n) is present
+[arn] Returns a match where one of the specified characters (a, r or n) is present
 [a-n] Return a match for any lower case character, aphabetically between a and n
 [^arn] Return a match for any character EXCEPT a, r and n
 [0123] Return a match where any of the specified digit  (0, 1, 2, 3) are present
@@ -56,14 +55,22 @@ def demo_re_split():
     print('Split Parts: ', parts)
 
 
-## Functions call
+def main():
+    print("Demo of re.match:")
+    demo_re_match()
+    print("\nDemo of re.search:")
+    demo_re_search()
+    print("\nDemo of re.findall:")
+    demo_re_findall()
+    print("\nDemo of re.finditer:")
+    demo_re_finditer()
+    print("\nDemo of re.sub:")
+    demo_re_sub()
+    print("\nDemo of re.split:")
+    demo_re_split()
 
-# demo_re_search()
-# demo_re_match()
-# demo_re_findall()
-# demo_re_finditer()
-# demo_re_sub()
-# demo_re_split()
+if __name__ == "__main__":
+    main()
 
 ## Core regular expression function
 
